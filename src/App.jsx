@@ -1,37 +1,21 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 import Button from './components/Button';
 import Image from './components/Image';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
+      <h1>ESERCIZIO BOTTONI</h1>
       <div>
-        <a href='https://vite.dev' target='_blank'>
-          <img src={viteLogo} className='logo' alt='Vite logo' />
-        </a>
-        <a href='https://react.dev' target='_blank'>
-          <img src={reactLogo} className='logo react' alt='React logo' />
-        </a>
+        <Button content='CLICCAMI!' />
+        <Button content='UN ALTRO BOTTONE' />
+        <Button content='TERZO BOTTONE' />
       </div>
-      <h1>Kevin, nuova pagina con react</h1>
-      <Button content='CLICCAMI!' />
-      <Image src={viteLogo} alt='Logo di Vite' />
-      <div className='card'>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <h1>ESERCIZIO IMMAGINI</h1>
+      <div>
+        <Image src='https://placecats.com/300/200' alt='Gatto' />
       </div>
-      <p className='read-the-docs'>
-        Click on the Vite and React logos to learn more
-      </p>
+      <Image src='https://placedog.net/300/200' alt='Cane' />
     </>
   );
 }
